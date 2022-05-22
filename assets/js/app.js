@@ -10,25 +10,25 @@ class Calc {
     }
 
     divide(num4){
-      result /= num4
-        return result
+        this.CustomMatch /= num4
+        return this
     }
     multiply(num3){
-      result *=  num3
+        this.CustomMatch *=  num3
         return this
     }
     minus(num2){
-        result -= num2
-       return   this
+        this.CustomMatch -= num2
+       return this
     }
     plus(num){
-        result = this.CustomMatch + num
+        this.CustomMatch = this.CustomMatch + num
         return this
 
     }
 
 }
-var result = new Calc(50).plus(6).minus(30).multiply(3).divide(2);
+var result = new Calc(50).minus(10).multiply(2).plus(10).divide(2);
 console.log(result)
 
 
